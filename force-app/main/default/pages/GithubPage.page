@@ -1,0 +1,3 @@
+<apex:page controller="GithubController" action="{!getCommits}">
+    {!body}
+</apex:page>
