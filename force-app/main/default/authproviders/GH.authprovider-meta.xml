@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuthProvider xmlns="http://soap.sforce.com/2006/04/metadata">
+    <authorizeUrl>https://github.com/login/oauth/authorize</authorizeUrl>
+    <consumerKey>Ov23likHhqrP8nfyBnny</consumerKey>
+    <consumerSecret>Placeholder_Value</consumerSecret>
+    <executionUser>jeeteshint@force.com</executionUser>
+    <friendlyName>GH</friendlyName>
+    <includeOrgIdInIdentifier>false</includeOrgIdInIdentifier>
+    <isPkceEnabled>true</isPkceEnabled>
+    <providerType>OpenIdConnect</providerType>
+    <registrationHandler>SocialAuthController</registrationHandler>
+    <requireMfa>true</requireMfa>
+    <sendAccessTokenInHeader>true</sendAccessTokenInHeader>
+    <sendClientCredentialsInHeader>false</sendClientCredentialsInHeader>
+    <sendSecretInApis>true</sendSecretInApis>
+    <tokenUrl>https://github.com/login/oauth/access_token</tokenUrl>
+    <userInfoUrl>https://api.github.com/user</userInfoUrl>
+</AuthProvider>
