@@ -1,0 +1,22 @@
+<template>
+    <template lwc:if={isDisplayMsg}>
+        <div class="slds-notify slds-notify_alert slds-alert_warning slds-theme_alert-texture" role="alert">
+            <span class="slds-assistive-text">Warning</span>
+            <div class="slds-icon_container slds-icon-utility-warning slds-m-right_small" title="Warning">
+                <lightning-icon icon-name="utility:warning" size="small" alternative-text="Warning Icon"></lightning-icon>
+            </div>
+            <h2 class="slds-text-heading_medium">
+                Your data is outdated. Please refresh the data.
+            </h2>
+            <div class="slds-notify__close">
+                <lightning-button-icon 
+                    icon-name="utility:refresh" 
+                    variant="bare" 
+                    title="Refresh" 
+                    aria-label="Refresh Data" 
+                    onclick={refreshButton}>
+                </lightning-button-icon>
+            </div>
+        </div>
+    </template>
+</template>
